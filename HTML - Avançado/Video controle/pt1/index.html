@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            position: relative;
+            width: 360px;
+            height: 640px;
+        }
+        #video{
+            width: 100%;
+        }
+        
+        .controle{
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .botao{
+            width: 35px;
+            padding: 10px;
+            position: relative;
+            top: 100%;
+            transform: translateY(-100%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div onmouseover="mouseon()" onmouseout="mouseoff()" class="container">
+
+        <video id="video" src="./assets/video.mp4" ></video>
+
+        <div class="controle">
+            <img class="botao" onclick="avancar()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+            <img class="botao" onclick="retroceder()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+            <img class="botao" onclick="diminuir()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+            <img class="botao" onclick="acelerar()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+            <img class="botao" onclick="play()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+            <img class="botao" onclick="stop()" src="/Atributos personalizados/imagens/cachorro.jpg" alt="" srcset="">
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
